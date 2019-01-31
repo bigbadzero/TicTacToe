@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_rock_paper_scissors"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/please_choose_your_weapon"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.422"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/PAPER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Paper"
+            android:text="@string/paper"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+        <Button
+            android:id="@+id/Rock"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:onClick="Rock"
+            android:text="@string/rock"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="51dp" />
+
+        <Button
+            android:id="@+id/SCISSORS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Scissors"
+            android:text="@string/scissors"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="144dp" />
+
+        <TextView
+            android:id="@+id/PlayerScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="192dp" />
+
+        <TextView
+            android:id="@+id/ComputerScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/computer"
+            tools:layout_editor_absoluteX="212dp"
+            tools:layout_editor_absoluteY="192dp" />
+
+        <TextView
+            android:id="@+id/PlayersWeapon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playerweapon"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="299dp" />
+
+        <TextView
+            android:id="@+id/ComputersWeapon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/computerweapon"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="328dp" />
+
+        <TextView
+            android:id="@+id/Message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/who_will_win"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="114dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
